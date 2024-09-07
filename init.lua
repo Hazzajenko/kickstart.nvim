@@ -638,6 +638,8 @@ require('lazy').setup({
         },
         --
 
+        marksman = {},
+
         lua_ls = {
           -- cmd = {...},
           -- filetypes = { ...},
