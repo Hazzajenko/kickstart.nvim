@@ -182,24 +182,24 @@ vim.keymap.set('n', '<up>', '<cmd>echo "Use k to move!!"<CR>')
 vim.keymap.set('n', '<down>', '<cmd>echo "Use j to move!!"<CR>')
 
 -- Remap hjkl to jkl;
-vim.keymap.set('n', 'j', 'h', { desc = 'Move left' })
-vim.keymap.set('n', 'k', 'j', { desc = 'Move down' })
-vim.keymap.set('n', 'l', 'k', { desc = 'Move up' })
-vim.keymap.set('n', ';', 'l', { desc = 'Move right' })
+--
+-- vim.keymap.set('n', 'j', 'h', { desc = 'Move left' })
+-- vim.keymap.set('n', 'k', 'j', { desc = 'Move down' })
+-- vim.keymap.set('n', 'l', 'k', { desc = 'Move up' })
+-- vim.keymap.set('n', ';', 'l', { desc = 'Move right' })
 
 -- Keybinds to make split navigation easier.
 --  Use CTRL+<hjkl> to switch between windows
---
+
 --  See `:help wincmd` for a list of all window commands
--- vim.keymap.set('n', '<C-h>', '<C-w><C-h>', { desc = 'Move focus to the left window' })
--- vim.keymap.set('n', '<C-l>', '<C-w><C-l>', { desc = 'Move focus to the right window' })
--- vim.keymap.set('n', '<C-j>', '<C-w><C-j>', { desc = 'Move focus to the lower window' })
--- vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper window' })
-vim.keymap.set('n', '<C-j>', '<C-w><C-j>', { desc = 'Move focus to the left window' })
-vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the lower window' })
-vim.keymap.set('n', '<C-l>', '<C-w><C-l>', { desc = 'Move focus to the upper window' })
--- ; for last one
-vim.keymap.set('n', '<C-;>', '<C-w><C-;>', { desc = 'Move focus to the last window' })
+vim.keymap.set('n', '<C-h>', '<C-w><C-h>', { desc = 'Move focus to the left window' })
+vim.keymap.set('n', '<C-l>', '<C-w><C-l>', { desc = 'Move focus to the right window' })
+vim.keymap.set('n', '<C-j>', '<C-w><C-j>', { desc = 'Move focus to the lower window' })
+vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper window' })
+-- vim.keymap.set('n', '<C-j>', '<C-w><C-j>', { desc = 'Move focus to the left window' })
+-- vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the lower window' })
+-- vim.keymap.set('n', '<C-l>', '<C-w><C-l>', { desc = 'Move focus to the upper window' })
+-- vim.keymap.set('n', '<C-;>', '<C-w><C-;>', { desc = 'Move focus to the last window' })
 
 -- [[ Basic Autocommands ]]
 --  See `:help lua-guide-autocommands`
